@@ -12,9 +12,7 @@ import java.util.logging.Logger;
 public class Main {
     public static void main(String[] args) throws IOException {
         try {
-            //FileInputStream fis;
-            //Path path;
-
+            // Reading config file
             Properties prop = new Properties();
             String configFile = "config.conf";
 
@@ -25,6 +23,7 @@ public class Main {
                 System.out.println("config file not found");
             }
 
+            // Fetching IP and Port from config file
             String ip;
             int port;
 
